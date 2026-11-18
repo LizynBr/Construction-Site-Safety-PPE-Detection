@@ -1,0 +1,10 @@
+{
+  "criterion": "validation mAP50-95; tie -> E1",
+  "selected": "e2",
+  "validation": {
+    "e1": 0.09630459974516498,
+    "e2": 0.12088631355368556
+  },
+  "weights": "runs\\detect\\runs\\ppe\\e2-freeze10\\weights\\best.pt",
+  "test_used_for_selection": false
+}

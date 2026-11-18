@@ -1,0 +1,37 @@
+{
+  "python": "3.13.15",
+  "os": "Windows-11-10.0.28000-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "packages": {
+    "ultralytics": "8.4.215",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.5"
+  },
+  "commit": "4f83a1ec37ac1cf0c057c4f679407afcb6cb13d0",
+  "manifest_sha256": "de23ae36508649cd8338b5d0a5f805b32e5cf764146d957fa807f5faaa858d08",
+  "weights": "runs\\detect\\runs\\ppe\\e2-freeze10\\weights\\best.pt",
+  "split": "test",
+  "images": 28,
+  "latency_p50_ms": 49.146150005981326,
+  "latency_p95_ms": 55.33174000083818,
+  "throughput_fps": 20.096398114838447,
+  "observed_peak_rss_mb": 382.5234375,
+  "false_detections_per_100_frames": 200.0,
+  "frames_with_false_detections_per_100": 71.42857142857143,
+  "stages_mean_ms": {
+    "decode_ms": 2.4775428578972685,
+    "full_ms": 49.76016071564767,
+    "preprocess": 1.0187535720303589,
+    "inference": 43.502721428272444,
+    "postprocess": 0.7494750020019377
+  },
+  "gallery_counts": {
+    "high-confidence-fp": 5,
+    "critical-fn": 18,
+    "low-iou": 4,
+    "class-confusion": 5,
+    "small-occluded": 8,
+    "suspected-label": 2
+  }
+}
