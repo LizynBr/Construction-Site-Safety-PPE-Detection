@@ -8,6 +8,24 @@ from ppe.data import ROOT, read_labels, validate_dataset, validate_manifest
 from ppe.vision import draw_boxes, iou, match, xywh_to_xyxy
 
 
+def test_experiments_change_only_freeze_factor():
+    import yaml
+
+    a = yaml.safe_load((ROOT / "configs/e1.yaml").read_text())
+    b = yaml.safe_load((ROOT / "configs/e2.yaml").read_text())
+    a.pop("name")
+    b.pop("name")
+    assert b.pop("freeze") == 10
+    assert a == b
+
+
+def test_wrong_class_is_not_a_true_positive():
+    gt = np.array([[0, 0, 0, 20, 20]])
+    predictions = [{"class_id": 2, "xyxy": [0, 0, 20, 20], "confidence": 0.9}]
+    matched, fp, fn = match(gt, predictions)
+    assert matched == [] and fp == [0] and fn == [0]
+
+
 @pytest.mark.parametrize(
     "line", ["10 .5 .5 .2 .2", "0 1.1 .5 .2 .2", "0 .5 .5 0 .2", "0 nan .5 .2 .2", "0 .5"]
 )

@@ -83,6 +83,8 @@ def main():
         print("RUN COMPLETE", folder, flush=True)
     elif args.action == "evaluate":
         validate_dataset()
+        if (ROOT / "runs/eval" / args.name).exists():
+            raise FileExistsError("Choose a new evaluation name to preserve the previous run")
         model = YOLO(args.weights)
         metrics = model.val(
             data=str(ROOT / "configs/ppe.yaml"),
@@ -121,7 +123,8 @@ def main():
             classes=rows,
             elapsed_seconds=time.perf_counter() - start,
         )
-        folder = Path(metrics.save_dir)
+        # Current DetMetrics does not expose save_dir; project is absolute and name is fixed.
+        folder = ROOT / "runs/eval" / args.name
         (folder / "metrics.json").write_text(json.dumps(meta, indent=2))
         print(json.dumps(meta, indent=2))
     else:
