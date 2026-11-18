@@ -8,6 +8,7 @@ data/prepared/
 *.cache
 runs/
 .local/
+*.egg-info/
 *.pt
 !models/best.pt
 !models/yolov8n.pt
