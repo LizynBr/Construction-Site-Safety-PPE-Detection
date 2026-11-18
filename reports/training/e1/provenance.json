@@ -1,0 +1,35 @@
+{
+  "python": "3.13.15",
+  "os": "Windows-11-10.0.28000-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "packages": {
+    "ultralytics": "8.4.215",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.5"
+  },
+  "commit": "2659c89ecbe795f810e318d1916e4507e6d971e6",
+  "manifest_sha256": "de23ae36508649cd8338b5d0a5f805b32e5cf764146d957fa807f5faaa858d08",
+  "config": {
+    "data": "configs/ppe.yaml",
+    "epochs": 20,
+    "imgsz": 640,
+    "batch": 4,
+    "seed": 42,
+    "deterministic": true,
+    "device": "cpu",
+    "workers": 0,
+    "cache": false,
+    "amp": false,
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "patience": 20,
+    "project": "runs/ppe",
+    "name": "e1-opora",
+    "exist_ok": false,
+    "plots": true
+  },
+  "initial_weights_sha256": "31e20dde3def09e2cf938c7be6fe23d9150bbbe503982af13345706515f2ef95",
+  "elapsed_seconds": 667.8931382999872,
+  "best_weights_sha256": "b6cfdaa7e9c27960914416f4237614c15c9d70ad3d27fd370ea76b10cfeb347b"
+}

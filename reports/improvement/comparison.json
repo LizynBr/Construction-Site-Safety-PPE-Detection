@@ -1,0 +1,10 @@
+{
+  "baseline": "E2, 20 epochs",
+  "candidate": "E3, 50 epochs",
+  "baseline_map50_95": 0.12088631355368556,
+  "candidate_map50_95": 0.15066614869040076,
+  "delta": 0.0297798351367152,
+  "improved_validation": true,
+  "test_reevaluated": false,
+  "candidate_weights": "runs\\detect\\runs\\ppe\\e3-freeze10-50epochs\\weights\\best.pt"
+}

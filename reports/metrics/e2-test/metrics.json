@@ -1,0 +1,111 @@
+{
+  "python": "3.13.15",
+  "os": "Windows-11-10.0.28000-SP0",
+  "processor": "Intel64 Family 6 Model 170 Stepping 4, GenuineIntel",
+  "packages": {
+    "ultralytics": "8.4.215",
+    "torch": "2.15.0",
+    "torchvision": "0.29.2",
+    "numpy": "2.5.5"
+  },
+  "commit": "4f83a1ec37ac1cf0c057c4f679407afcb6cb13d0",
+  "manifest_sha256": "de23ae36508649cd8338b5d0a5f805b32e5cf764146d957fa807f5faaa858d08",
+  "split": "test",
+  "weights_sha256": "f26d68fda94a586e5d55f0bd71142cfffe1d06392db6db962d62098f989abc1e",
+  "imgsz": 640,
+  "map50": 0.39682782237471304,
+  "map50_95": 0.2399046436492186,
+  "classes": [
+    {
+      "class_id": 0,
+      "class": "Hardhat",
+      "objects": 32,
+      "precision": 0.7144379257499727,
+      "recall": 0.46911625883587177,
+      "ap50": 0.7096852937134248,
+      "ap50_95": 0.4807127105707282
+    },
+    {
+      "class_id": 1,
+      "class": "Mask",
+      "objects": 14,
+      "precision": 0.6262201362696522,
+      "recall": 0.35714285714285715,
+      "ap50": 0.44295475113122174,
+      "ap50_95": 0.27340988906728947
+    },
+    {
+      "class_id": 2,
+      "class": "NO-Hardhat",
+      "objects": 22,
+      "precision": 0.48285448804461945,
+      "recall": 0.6818181818181818,
+      "ap50": 0.6187975755665105,
+      "ap50_95": 0.28432376757700906
+    },
+    {
+      "class_id": 3,
+      "class": "NO-Mask",
+      "objects": 33,
+      "precision": 0.6818618559160817,
+      "recall": 0.06060606060606061,
+      "ap50": 0.19670327894855752,
+      "ap50_95": 0.06329546723756713
+    },
+    {
+      "class_id": 4,
+      "class": "NO-Safety Vest",
+      "objects": 25,
+      "precision": 0.3382502314021825,
+      "recall": 0.6,
+      "ap50": 0.4693827534889973,
+      "ap50_95": 0.2990590688464422
+    },
+    {
+      "class_id": 5,
+      "class": "Person",
+      "objects": 57,
+      "precision": 0.6528455805030801,
+      "recall": 0.7368421052631579,
+      "ap50": 0.7821436918844564,
+      "ap50_95": 0.5276807957970004
+    },
+    {
+      "class_id": 6,
+      "class": "Safety Cone",
+      "objects": 12,
+      "precision": 0.3778142666966452,
+      "recall": 0.25,
+      "ap50": 0.32032365584868977,
+      "ap50_95": 0.2228503383872516
+    },
+    {
+      "class_id": 7,
+      "class": "Safety Vest",
+      "objects": 27,
+      "precision": 0.37231001442403844,
+      "recall": 0.48148148148148145,
+      "ap50": 0.3262359411139899,
+      "ap50_95": 0.1762785015730008
+    },
+    {
+      "class_id": 8,
+      "class": "machinery",
+      "objects": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "ap50": 0.019134615384615392,
+      "ap50_95": 0.013394230769230775
+    },
+    {
+      "class_id": 9,
+      "class": "vehicle",
+      "objects": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "ap50": 0.08291666666666667,
+      "ap50_95": 0.05804166666666667
+    }
+  ],
+  "elapsed_seconds": 5.907240000000456
+}
