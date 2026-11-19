@@ -3,8 +3,7 @@
 ## Промышленная видеоаналитика: обнаружение средств индивидуальной защиты с YOLOv8
 
 **Дисциплина:** «Введение в искусственный интеллект»  
-**Исполнитель:** ____________________  
-**Группа:** ____________________  
+**Выполнила:** Брагина Елизавета
 **Год:** 2026
 
 ---
@@ -197,17 +196,14 @@ E2 улучшил средний результат относительно E1.
 
 *Рисунок 5 — Зависимость F1 от confidence для E3 на validation. F1 объединяет precision и recall; максимум показывает один из вариантов компромисса между пропусками и лишними детектами.*
 
-![Precision и порог confidence для E3](improvement/validation/BoxP_curve.png)
-
-*Рисунок 6 — Precision при разных порогах confidence, E3, validation.*
 
 ![Recall и порог confidence для E3](improvement/validation/BoxR_curve.png)
 
-*Рисунок 7 — Recall при разных порогах confidence, E3, validation. Повышение порога обычно исключает слабые предсказания, но увеличивает число пропусков.*
+*Рисунок 6 — Recall при разных порогах confidence, E3, validation. Повышение порога обычно исключает слабые предсказания, но увеличивает число пропусков.*
 
 ![Нормированная матрица ошибок E3 на validation](improvement/validation/confusion_matrix_normalized.png)
 
-*Рисунок 8 — Нормированная матрица ошибок лучшей E3 на validation. Строки — предсказанные классы, столбцы — истинные. Background-строка соответствует пропускам, background-столбец — ложным срабатываниям. Матрица рассчитана библиотекой при confidence=0,001; она включает слабые гипотезы и не равна диагностике при рабочем пороге 0,25.*
+*Рисунок 7 — Нормированная матрица ошибок лучшей E3 на validation. Строки — предсказанные классы, столбцы — истинные. Background-строка соответствует пропускам, background-столбец — ложным срабатываниям. Матрица рассчитана библиотекой при confidence=0,001; она включает слабые гипотезы и не равна диагностике при рабочем пороге 0,25.*
 
 ### 6.4. Отдельная итоговая оценка E1/E2 на test
 
@@ -449,7 +445,5 @@ Codex использован для подготовки кода, тестов,
 
 ## Источники
 
-1. Задание «Лабораторная №3.pdf» и «Общая инструкция.pdf», предоставленные преподавателем через пользователя.
-2. [Исходный проект snehilsanyal](https://github.com/snehilsanyal/Construction-Site-Safety-PPE-Detection).
-3. [Construction Site Safety v28](https://universe.roboflow.com/roboflow-universe-projects/construction-site-safety/dataset/28).
-4. [Документация Ultralytics: обучение](https://docs.ultralytics.com/modes/train/).
+1. [Исходный проект snehilsanyal](https://github.com/snehilsanyal/Construction-Site-Safety-PPE-Detection).
+2. [Construction Site Safety v28](https://universe.roboflow.com/roboflow-universe-projects/construction-site-safety/dataset/28).
